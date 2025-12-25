@@ -1,0 +1,5 @@
+{
+  "name": "Tencentmap走查工具pro",
+  "description": "基于 AI 的自动化 UI 视觉一致性对比工具。支持批量配对、语义化颜色分析及主题适配修复建议。",
+  "requestFramePermissions": []
+}

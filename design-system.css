@@ -1,0 +1,58 @@
+
+:root {
+  /* 基础色板 */
+  --Red-0: #FFF0F1; --Red-5: #FF293B; --Red-10: #3D0005;
+  --Green-0: #F0FFF4; --Green-5: #00B83D; --Green-10: #134228;
+  --Indigo-0: #E5E5FF; --Indigo-5: #3636F5; --Indigo-10: #05054D;
+  --Blue-0: #EFF6FF; --Blue-5: #367BF6; --Blue-10: #071854;
+  --Cold-Gray-1: #F1F1F3; --Cold-Gray-5: #6B7390; --Cold-Gray-10: #1F2128;
+  
+  /* 文本语义 */
+  --text-primary: rgba(0, 0, 0, 1);
+  --text-secondary: rgba(0, 0, 0, 0.6);
+  --text-tertiary: rgba(0, 0, 0, 0.42);
+  --text-link: var(--Blue-5);
+  
+  /* 背景语义 */
+  --bg-page: #FFFFFF;
+  --bg-container: #FFFFFF;
+  --bg-hover: rgba(0, 0, 0, 0.08);
+
+  /* 圆角系统 */
+  --card-radius-xl: 40px;
+  --card-radius-lg: 24px;
+  --card-radius-md: 16px;
+  --card-radius-sm: 12px;
+  --button-radius-lg: 16px;
+  --button-radius-capsule: 50px;
+
+  /* 字体系统 (更新 15px 为合法选项) */
+  --font-family-base: "PingFang SC", -apple-system, sans-serif;
+  --text-page-title-size: 24px;   /* Level 1 */
+  --text-large-title-size: 20px;  /* Level 2 */
+  --text-section-title-size: 18px;/* Level 3 */
+  --text-emphasis-size: 16px;     /* Level 4 */
+  --text-long-size: 15px;         /* Level 5 - 已启用 */
+  --text-body-size: 14px;         /* Level 6 */
+  --text-caption-size: 12px;      /* Level 7 */
+
+  /* 行高建议 */
+  --text-long-height: 24px;
+  --text-body-height: 20px;
+}
+
+[data-theme="dark"], .dark-mode {
+  --text-primary: rgba(255, 255, 255, 1);
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  --bg-page: #1A1C22;
+  --bg-container: var(--Cold-Gray-10);
+}
+
+/* 核心原则：同心圆角 */
+.concentric-radius-example {
+  border-radius: var(--card-radius-lg);
+  padding: 8px;
+}
+.concentric-radius-example > .inner {
+  border-radius: var(--card-radius-md);
+}
